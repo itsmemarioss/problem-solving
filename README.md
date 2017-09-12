@@ -14,7 +14,7 @@ Project with classes sent to website [URI Online Judge](https://www.urionlinejud
 ### Como rodar | How to run 
 Caso necessite, inclua no arquivo `in` as entradas para teste.
  
-java <package>.<Class name> < in
+java package.ClassName < in
 
 ```sh
 $ java strings.RevisaoDeContrato < in
