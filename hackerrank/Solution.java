@@ -5,11 +5,14 @@ import java.util.*;
 class Checker implements Comparator<Player>{
     
     public int compare(Player player1, Player player2){
-        int result = player2.score - player1.score;
-        if(result == 0 && (player1.name.compareTo(player2.name) < 0)) {
-        	result--;
-        }
-    	return result;
+        
+    	
+    	if(player1.score==player2.score) {
+    		return player1.name.compareTo(player2.name);
+    	}else {
+    		return player2.score - player1.score;
+    	}
+        
     }
     
 }
