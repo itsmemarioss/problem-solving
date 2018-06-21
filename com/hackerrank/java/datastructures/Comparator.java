@@ -1,8 +1,16 @@
-package hackerrank;
+package com.hackerrank.java.datastructures;
 
 import java.util.*;
 
-class Checker implements Comparator<Player>{
+/**
+ * https://www.hackerrank.com/challenges/java-comparator/problem
+ * 
+ * Difficulty: Medium
+ * 
+ * @author mario
+ *
+ */
+class Checker implements java.util.Comparator<Player>{
     
     public int compare(Player player1, Player player2){
         
@@ -27,7 +35,7 @@ class Player{
     }
 }
 
-public class Solution {
+public class Comparator {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

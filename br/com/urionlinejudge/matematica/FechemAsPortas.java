@@ -1,4 +1,4 @@
-package matematica;
+package br.com.urionlinejudge.matematica;
 
 import java.util.Scanner;
 

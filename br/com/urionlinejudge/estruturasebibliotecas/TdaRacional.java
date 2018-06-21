@@ -1,4 +1,4 @@
-package estruturasebibliotecas;
+package br.com.urionlinejudge.estruturasebibliotecas;
 
 import java.io.BufferedReader;
 import java.io.IOException;

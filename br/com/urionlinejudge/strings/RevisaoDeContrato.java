@@ -1,4 +1,4 @@
-package strings;
+package br.com.urionlinejudge.strings;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

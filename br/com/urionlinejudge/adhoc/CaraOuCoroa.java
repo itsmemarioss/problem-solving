@@ -1,4 +1,4 @@
-package adhoc;
+package br.com.urionlinejudge.adhoc;
 
 import java.util.*;
 import java.io.*;

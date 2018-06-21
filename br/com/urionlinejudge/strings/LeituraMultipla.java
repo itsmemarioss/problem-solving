@@ -1,4 +1,4 @@
-package strings;
+package br.com.urionlinejudge.strings;
 import java.util.Scanner;
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package adhoc;
+package br.com.urionlinejudge.adhoc;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,15 +1,13 @@
-## URI Online Judge
+## Problem Solving
 
-Projeto contendo código submetido para o site [URI Online Judge](https://www.urionlinejudge.com.br)
+Projeto contendo código submetido para os sites: [URI Online Judge](https://www.urionlinejudge.com.br) e [Hackerrank](https://www.hackerrank.com)
 
-Project with classes sent to website [URI Online Judge](https://www.urionlinejudge.com.br)
+Project with classes submited to websites [URI Online Judge](https://www.urionlinejudge.com.br) and [Hackerrank](https://www.hackerrank.com)
 
 ### Pacotes | Packages
 
-* adhoc
-* iniciante
-* matematica
-* strings
+* br.com.urionlinejudge
+* com.hackerrank
 
 ### Como rodar | How to run 
 Caso necessite, inclua no arquivo `in` as entradas para teste.
@@ -18,6 +16,12 @@ java package.ClassName < in
 
 ```sh
 $ java strings.RevisaoDeContrato < in
+```
+
+Alguns problemas do hackerrank utililizar a variável de ambiente `OUTPUT_PATH` para escrever a saída do algorítmo. Para esses casos altere o código ou defina uma variável de mesmo nome.
+
+```java
+System.getenv("OUTPUT_PATH")
 ```
 
 ### Como submeter | How to submit
