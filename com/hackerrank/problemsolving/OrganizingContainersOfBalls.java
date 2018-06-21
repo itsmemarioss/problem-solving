@@ -25,7 +25,7 @@ public class OrganizingContainersOfBalls {
 		boolean moveOn = false;
 		int success = 0;
 
-		for (int b = 0; b < container.length; b++) {
+		BALLS: for (int b = 0; b < container.length; b++) {
 
 			CONTAINER: for (int c = 0; c < container.length; c++) {
 
@@ -42,23 +42,21 @@ public class OrganizingContainersOfBalls {
 				// calculate balls to receive
 				for (int j = 0; j < container.length; j++) {
 					if (j != c) {
-						ballsToRecieve += container[j][c];
+						ballsToRecieve += container[j][b];
 					}
 				}
 
-				moveOn = ballsToSwap == ballsToRecieve;
-
-				if (moveOn) {
+				if (ballsToSwap == ballsToRecieve ) {
 					success++;
-					break CONTAINER;
+					if (success == container.length -1) {
+						result = "Possible";
+						break BALLS;
+					}
 				}
 			} // container loop
 
 		} // balls loop
 
-		if (success == container.length) {
-			result = "Possible";
-		}
 
 		return result;
 	}

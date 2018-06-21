@@ -2,7 +2,7 @@
 
 Projeto contendo código submetido para os sites: [URI Online Judge](https://www.urionlinejudge.com.br) e [Hackerrank](https://www.hackerrank.com)
 
-Project with classes submited to websites [URI Online Judge](https://www.urionlinejudge.com.br) and [Hackerrank](https://www.hackerrank.com)
+Project with code submited to websites [URI Online Judge](https://www.urionlinejudge.com.br) and [Hackerrank](https://www.hackerrank.com)
 
 ### Pacotes | Packages
 
