@@ -1,4 +1,4 @@
-package tentativaeerro;
+package backtracking;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
