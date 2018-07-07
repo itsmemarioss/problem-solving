@@ -1,4 +1,4 @@
-package sorting;
+package com.hackerrank.interviewpreparation.datastructure;
 
 import java.util.Arrays;
 

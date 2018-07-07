@@ -1,4 +1,4 @@
-package com.hackerrank.interviewpreparation.tree;
+package com.hackerrank.interviewpreparation.datastructure.tree;
 
 public class Node {
 	
