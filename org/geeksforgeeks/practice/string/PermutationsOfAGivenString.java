@@ -1,4 +1,4 @@
-package org.geeksforgeeks.practice;
+package org.geeksforgeeks.practice.string;
 
 import java.io.BufferedReader;
 import java.io.IOException;
