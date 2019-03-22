@@ -27,6 +27,7 @@ public class NewYearChaos {
             }
         }
         System.out.println(count>0?count:"Too chaotic");
+
     }
 
     private static final Scanner scanner = new Scanner(System.in);
