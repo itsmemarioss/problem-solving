@@ -62,7 +62,7 @@ public class AdjacentMatrix implements Graph<Integer>{
 		}
 		
 		visited.add(source);
-		System.out.printf("Visting node %d%n",source);
+
 		if(source.equals(destination)) {
 			return true;
 		}
@@ -87,8 +87,9 @@ public class AdjacentMatrix implements Graph<Integer>{
 			if(visited.contains(currentNode)) {
 				continue;
 			}
-			System.out.printf("Visting node %d%n",currentNode);
+			
 			visited.add(currentNode);
+
 			if(currentNode.equals(destination)) {
 				return true;
 			}

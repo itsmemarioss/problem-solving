@@ -4,20 +4,20 @@ public class Node {
 	
 	private Node left;
 	private Node right;
-	private int value;
+	private int data;
 	
 	public Node(int value) {
-		this.value = value;
+		this.data = value;
 	}
 	
 	public void insert(int newValue) {
-		if(newValue<value) {
+		if(newValue<data) {
 			if(left != null) {
 				left.insert(newValue);
 			}else {
 				left = new Node(newValue);
 			}
-		}else if(newValue > value) {
+		}else if(newValue > data) {
 			if(right!=null) {
 				right.insert(newValue);
 			}else {
@@ -26,16 +26,16 @@ public class Node {
 		}
 	}
 	
-	public boolean contains(int value) {
+	public boolean contains(int data) {
 		boolean result = false;
 		
-		if(this.value == value) {
+		if(this.data == data) {
 			result = true;
 		}else {
-			if(value > this.value && right != null) {
-				result = right.contains(value);
-			}else if(value < this.value && left != null) {
-				result = left.contains(value);
+			if(data > this.data && right != null) {
+				result = right.contains(data);
+			}else if(data < this.data && left != null) {
+				result = left.contains(data);
 			}
 		}
 		
@@ -48,7 +48,7 @@ public class Node {
 			left.printInOrder();
 		}
 		
-		System.out.printf("%d,",value);
+		System.out.printf("%d,",data);
 		
 		if(right!=null) {
 			right.printInOrder();
