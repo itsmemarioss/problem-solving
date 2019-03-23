@@ -26,6 +26,7 @@ public class DecimalToRoman {
 		Scanner scan = new Scanner(System.in);
 		
 		while(true){
+			
 			Integer number = Integer.parseInt(scan.nextLine());
 			System.out.println(convert(number));
 		}
@@ -41,25 +42,26 @@ public class DecimalToRoman {
 			StringBuilder roman = new StringBuilder();
 
 			int sum = 0;
-			int count = 0;
 			boolean add = true;
 			int anterior = 0;
 			
 			FOR:for(Integer i : decToRoman.keySet()){
 				
 				sum = i;
+				
+				if(anterior==0)
+					anterior = i;
+				
 				roman.append(decToRoman.get(i));
 				add = sum < number;
-				
-				WHILE:while(count<2){
+								
+				WHILE:while(!roman.toString().matches(".*I{3}$")){
 					if(add){
-						sum += i;
-						roman.append(decToRoman.get(i));
-						count++;
+						sum += anterior;
+						roman.append(decToRoman.get(anterior));
 					}else{
 						sum -= anterior;
 						roman.insert(0, decToRoman.get(anterior));
-						count=2;//TODO
 					}
 				
 					if(sum==number){
@@ -69,9 +71,7 @@ public class DecimalToRoman {
 					add = sum < number;
 				}
 				
-				count=0;
 				roman.setLength(0);
-				anterior = i;
 			}
 			return roman.toString();	
 		}
