@@ -12,33 +12,21 @@ public class NewYearChaos {
 
     // Complete the minimumBribes function below.
     static void minimumBribes(int[] q) {
-        
-        List<Integer> list = new LinkedList<>();
-        for (int i = 0; i < q.length; i++) {
-			list.add(q[i]);
-		}
-        Collections.sort(list);
-        
         int count = 0;
-        
-        for (int i = 0; i < q.length; i++) {
-			int index = list.indexOf(q[i]);
-			
-			int bribes = index-i;
-			
-			if(bribes <= 2 && bribes > 0){
-				count += Math.abs(bribes);
-				int element = list.remove(index);
-				
-				list.add(i, element);
-			}else if(Math.abs(bribes)>2){
-				System.out.println("Too chaotic");
-				return;
-			}
-        	
-		}
-        
-        System.out.println(count);
+        for(int i =0; i < q.length; i++){
+            int bribes = q[i] - (i + 1);
+            if( bribes > 2 ){
+                count=0;
+                break;
+            }
+
+            if(bribes > 0){
+                count += bribes;
+            }else if ( (i != q.length -1) && (q[i]>q[i+1])) {
+                count++;
+            }
+        }
+        System.out.println(count>0?count:"Too chaotic");
 
     }
 
@@ -55,7 +43,7 @@ public class NewYearChaos {
             int[] q = new int[n];
 
             String[] qItems = scanner.nextLine().split(" ");
-            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+            //scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
             for (int i = 0; i < n; i++) {
                 int qItem = Integer.parseInt(qItems[i]);
