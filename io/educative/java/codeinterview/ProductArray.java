@@ -1,12 +1,12 @@
 /**
 * Given an array, return an array where each index stores the product of all numbers except the number on the index itself. 
 */
-class ProductArray  {  
-
-  //Maybe I could use a map to store the partial values and avoid recalculating everything again.
+class ProductArray {
+ 
   public static int[] findProduct(int arr[]) {    
 
     int [] result = new int[arr.length];
+    int previous = 1;
 
     for(int i=0; i< arr.length; i++) {
       int mult = 1;
@@ -15,13 +15,11 @@ class ProductArray  {
         mult *= arr[j];
       }
 
-      for(int j=0; j < i; j++) {
-        mult *= arr[j];
-      }
+      result[i]=previous * mult;
 
-      result[i]=mult;
+      previous *= arr[i];
     }
 
-    return result; 
-   } 
+    return result;
+  } 
 } 
