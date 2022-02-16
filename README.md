@@ -1,32 +1,26 @@
 ## Problem Solving
 
-Projeto contendo código submetido para os sites: [URI Online Judge](https://www.urionlinejudge.com.br) e [Hackerrank](https://www.hackerrank.com)
+Project with code submitted to websites [URI Online Judge](https://www.urionlinejudge.com.br) and [Hackerrank](https://www.hackerrank.com) and others.
 
-Project with code submited to websites [URI Online Judge](https://www.urionlinejudge.com.br) and [Hackerrank](https://www.hackerrank.com)
+### Packages
 
-### Pacotes | Packages
+* src.main.java.br.com.itsmemario.urionlinejudge
+* src.main.java.br.com.itsmemario.hackerrank
 
-* br.com.urionlinejudge
-* com.hackerrank
-
-### Como rodar | How to run 
-Caso necessite, inclua no arquivo `in` as entradas para teste.
- 
-java package.ClassName < in
+### How to run 
+If you need you can pass a file with test cases
 
 ```sh
 $ java strings.RevisaoDeContrato < in
 ```
 
-Alguns problemas do hackerrank utililizar a variável de ambiente `OUTPUT_PATH` para escrever a saída do algorítmo. Para esses casos altere o código ou defina uma variável de mesmo nome.
-
+Some hackerrank problems use an environment variable `OUTPUT_PATH` to write the output. In these cases chagen the code or define a variable with the same name.
 ```java
 System.getenv("OUTPUT_PATH")
 ```
 
-### Como submeter | How to submit
+### How to submit
 
-As classes devem ser submetidas sem pacote e com nome Main
 Before submit the class you *must* remove the package statement and rename the class to `Main`
 
 
