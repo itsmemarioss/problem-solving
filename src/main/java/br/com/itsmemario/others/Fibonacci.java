@@ -30,7 +30,7 @@ public class Fibonacci {
     }
 
     /**
-     * complexity O(n^2)?
+     * complexity O(2^N)?
      * @param position
      * @return
      */
