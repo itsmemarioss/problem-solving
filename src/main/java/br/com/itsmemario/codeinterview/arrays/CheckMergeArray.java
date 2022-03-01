@@ -1,13 +1,10 @@
-package br.com.itsmemario.codeinterview;
+package br.com.itsmemario.codeinterview.arrays;
 
 class CheckMergeArray {
     // merge arr1 and arr2 into a new result array 
     public static int[] mergeArrays(int[] arr1, int[] arr2){  
       
       int size = arr1.length + arr2.length;
-      int max = Math.max(arr1.length, arr2.length);
-      
-      //java.util.List<Integer> merge = new ArrayList();
 
       int[] merged = new int[size];
       

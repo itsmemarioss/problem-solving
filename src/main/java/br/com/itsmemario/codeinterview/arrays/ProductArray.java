@@ -1,4 +1,4 @@
-package br.com.itsmemario.codeinterview;
+package br.com.itsmemario.codeinterview.arrays;
 
 /**
 * Given an array, return an array where each index stores the product of all numbers except the number on the index itself. 

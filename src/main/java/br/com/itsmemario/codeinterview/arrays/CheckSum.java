@@ -1,4 +1,4 @@
-package br.com.itsmemario.codeinterview;
+package br.com.itsmemario.codeinterview.arrays;
 
 import java.util.Arrays;
 
